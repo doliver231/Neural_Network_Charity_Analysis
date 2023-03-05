@@ -2,6 +2,12 @@
 
 ## Objective
 
+Using Machine Learning and Neural Networks for this project, I used the features in the dataset to create a binary classifier that will help to predict if the applicants that will be funded by a Charitable organization called Alphabet Soup will be successful. For this analysis we had a dataset containing various measures on 34,000 organizations that have been funded by Alphabet Soup. This project compromised of the following 3 steps:
+
+* Preprocessing the data for the neural network
+* Compile, Train and Evaluate the Model
+* Optimizing the model
+
 ## Results
 
 ### Data Preprocessing
@@ -26,16 +32,8 @@ In my inital model, I started with my first inital hidden layer with 80 neurons 
 
 ![Inital Model](https://github.com/doliver231/Neural_Network_Charity_Analysis/blob/main/Images/keras_model.png)
 
-In the optimized model, I added a third hidden layer. Layer 1 had 100 neurons, layer 2 had 30 neurons, and layer 3 had 10. All layers used relu activation functions. Another opitimized model
+In the optimized model, I added a third hidden layer. Layer 1 had 100 neurons, layer 2 had 30 neurons, and layer 3 had 10 neurons. All layers used relu activation functions. Proceeding this model was another version with the same amount of neurons but changed one activation function from relu to sigmoid. Lastly, the rest of the activation functions were changed to sigmoid to observe any effects.
 
 ## Summary
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
-
-
-
-
-0.7258, 0.5564 loss
-0.7256, 0.5608 loss
-0.7254, 0.5550 loss
-0.7263, 0.5532 loss
+The model ended up with the accuracy score of 72.5-72.6% after optimization, which wasn't much change at all from the original model. The initial neural network had a accuracy score of 72.6%. There is a possibilty of the model being overfitted, the more hidden layers and neurons being added. We could further optimize our neural network by removing more features or simply adding more data to the dataset to increase accuracy. Since our accuracy score was not particularly up to the standard with neural networks, we could have used the Random Forest classifiers. This is because random forest is a robust model due to their sufficient number of estimators and tree depth. They can be useful when trying to avoid overfitting the model.
