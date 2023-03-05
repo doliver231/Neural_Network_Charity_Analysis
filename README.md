@@ -24,7 +24,7 @@ How many neurons, layers, and activation functions did you select for your neura
 
 In my inital model, I started with my first inital hidden layer with 80 neurons and relu activation function. The second hidden layer consisted on 30 neurons and the same activation function. The output layer used a sigmoid activation function.
 
-![Inital Model]()
+![Inital Model](https://github.com/doliver231/Neural_Network_Charity_Analysis/blob/main/Images/keras_model.png)
 
 In the optimized model, I added a third hidden layer. Layer 1 had 100 neurons, layer 2 had 30 neurons, and layer 3 had 10. All layers used relu activation functions. Another opitimized model
 
